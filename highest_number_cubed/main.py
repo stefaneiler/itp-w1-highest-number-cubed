@@ -2,4 +2,8 @@
 
 
 def highest_number_cubed(limit):
-    pass
+    if isinstance(limit, float):
+        return 'please insert an integer'
+    else:
+        floater = limit**(1./3)
+        return int(floater)
